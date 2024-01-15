@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
+
+/* /* ====common styles==== */
+
+body{
+    font-family: 'Mulish', sans-serif;
+}
+:root{
+    --primary-color:#FF5400;
+    --secondary-color:#424247:
+}
+
+/* ====common styles==== */
+
+
+
+
+/* ==== nav bar styles start ====*/
+
+
+header{
+    margin: 50px 135px;
+    }
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+.logo{
+    display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.logo>h3{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.logo>h3>span{
+    color: var(--primary-color);
+    }
+
+
+    .nav-icon{
+        display: flex;
+        gap: 44px;
+    }
+    .nav-icon>li{
+        list-style: none;
+    }
+    .nav-icon>li>a{
+        text-decoration: none;
+      color: var(--secondary-color);
+      padding: 10px 0px;
+      font-size: 18px;
+      font-weight: 400;
+    
+    }
+    .nav-icon>li>a:hover,.nav-icon>li>a.active{
+        color: var(--primary-color);
+    }
+
+   #nav-toggler{
+    display: none;
+    }
+   .nav-toggler-icon{
+    display: none;
+    color: hsl(238, 96%, 10%);
+    font-size: 30px;
+    }
+
+/* ==== nav bar styles end==== */
+
+
+/* ====main section style=== */
+/* banner section style start */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==== Mobile responsive==== */
+@media screen and (max-width:600px){
+    header{
+        margin:30px;
+        }
+        .logo>h3{
+            font-size: 2rem;
+        }
+    .nav-toggler-icon{
+        display: block;
+    }
+    .nav-icon{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(90deg, rgb(248, 180, 144),rgba(232, 182, 132, 0.35));
+        padding: 20px 0;
+        transform: translateY(-350px);
+        transition: .3s linear;
+        gap: 0;
+
+    }
+    .nav-icon>li{
+        margin: 10px 0;
+    }
+    .nav-icon>li>a{
+        color: #121212;
+        font-weight: 700;
+    }
+    #nav-toggler:checked ~ .nav-icon{
+        transform: translateY(10px);
+    }
+}
+
+
+
+/* ====Tablet responsive==== */
+
+
+@media screen and (min-width:601px) and (max-width:992px) {
+    header{
+        margin:30px;
+        }
+    .nav-toggler-icon{
+        display: block;
+    }
+    .nav-icon{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(90deg, rgb(248, 180, 144),rgba(232, 182, 132, 0.35));
+        padding: 20px 0;
+        transform: translateY(-350px);
+        transition: .3s linear;
+        gap: 0;
+    }
+    .nav-icon>li{
+        margin: 10px 0;
+    }
+    .nav-icon li a{
+        color: #121212;
+        font-weight: 700;
+    }
+    #nav-toggler:checked ~ .nav-icon{
+        transform: translateY(10px);
+    }
+} 
