@@ -5,10 +5,35 @@
 
 body{
     font-family: 'Mulish', sans-serif;
+    max-width:  1440px;;
+    margin: 0 auto;
 }
 :root{
     --primary-color:#FF5400;
     --secondary-color:#424247:
+}
+.find-btn{
+padding: 16px;
+border-radius: 8px;
+background-color: var(--primary-color);
+color: white;
+border: 0;
+cursor: pointer;
+}
+.primary-btn{
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: white;
+    border: 0;
+    cursor: pointer;
+    padding: 14px 35px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.section-title{
+    color: #131318;
+    font-size:2.5rem;
+    font-weight: 800;
 }
 
 /* ====common styles==== */
@@ -20,7 +45,7 @@ body{
 
 
 header{
-    margin: 50px 135px;
+    margin: 4% 10%;
     }
 nav{
     display: flex;
@@ -38,7 +63,7 @@ nav{
     font-weight: 700;
 }
 
-.logo>h3>span{
+.travel{
     color: var(--primary-color);
     }
 
@@ -76,14 +101,121 @@ nav{
 
 /* ====main section style=== */
 /* banner section style start */
+main{
+    margin: 4% 10%;
+}
+.banner{
+    background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(/Images/Banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+
+.banner-content{
+    padding: 105px 130px;
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+     align-items: center;
+    justify-content: center;
+    max-width: 50rem;
+}
+
+.banner-title{
+    margin-top: 5px;
+    color: white;
+    font-size: 4rem;
+font-weight: 800;
+margin-bottom: 5px;
+}
+.banner-content p{
+    color: white;
+    line-height: 26px;
+}
+
+form{
+    display: flex;
+   align-items: center;
+   gap: 20px;
+   border-radius: 8px;
+background: rgba(255, 255, 255, 0.30);
+padding: 16px;
+}
+
+.form-field{
+  padding: 16px 34px;
+  border-radius: 8px;
+  border: 0;
+  font-family: Mulish;
+  color: rgba(19, 19, 24, 0.50);
+}
+
+
+/* banner section style end */
 
 
 
+/* popular-tours section */
+.popular-toures{
+    display: flex;
+    margin: 100px 0;
+    gap: 52px;
+}
 
+.torues-content{
+width: 50%;
+}
+.torues-content p{
+    line-height: 26px;
+}
 
+.torues-content img{
+    width: 100%;
+}
 
-
-
+/* Destination section */
+.destination-content{
+    text-align: center;
+    margin: 0 200px 48px;
+}
+.destination-photo{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.destination-photo img{
+    width: 100%;
+}
+.image{
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.text{
+    color: white;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 33%;
+    left: 33%;
+}
+/* footer section styles */
+footer{
+    background-color: rgba(19, 19, 24, 0.05);
+    padding: 110px 330px;
+    text-align: center;
+}
+footer>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+}
+footer>ul>li{
+    list-style: none;
+    
+}
 
 
 
@@ -131,7 +263,7 @@ nav{
 /* ====Tablet responsive==== */
 
 
-@media screen and (min-width:601px) and (max-width:992px) {
+/* @media screen and (min-width:601px) and (max-width:992px) {
     header{
         margin:30px;
         }
@@ -161,4 +293,4 @@ nav{
     #nav-toggler:checked ~ .nav-icon{
         transform: translateY(10px);
     }
-} 
+}  */
