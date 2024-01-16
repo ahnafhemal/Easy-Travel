@@ -40,7 +40,9 @@ cursor: pointer;
     font-size:2.5rem;
     font-weight: 800;
 }
-
+p{
+    color: #5A5A5D;
+}
 /* ====common styles==== */
 
 
@@ -149,6 +151,7 @@ padding: 16px;
 }
 
 .form-field{
+    padding-left:5px;
   width: 174px;
   height: 52px;
 border-radius: 8px;
@@ -157,7 +160,9 @@ font-family: Mulish;
 color: rgba(19, 19, 24, 0.50);
 }
 
-
+.find-btn>i{
+    padding-right: 14px;
+}
 /* banner section style end */
 
 
@@ -169,9 +174,7 @@ color: rgba(19, 19, 24, 0.50);
     gap: 52px;
 }
 
-/* .torues-content{
-width: 50%;
-} */
+
 .torues-content p{
     line-height: 26px;
 }
@@ -246,7 +249,7 @@ padding: 32px;
 }
 .newsletter{
 width: 35%;
-padding:0 65px;
+padding:0 40px;
 border-radius: 8px;
 border: 2px solid var(--primary-color);
 }
@@ -254,6 +257,7 @@ border: 2px solid var(--primary-color);
     color: hsl(0, 0%, 0%);
 font-size: 1.9rm;
 font-weight: 800;
+
 }
 .newsletter>p,hr{
     color: #5A5A5D;
@@ -278,14 +282,16 @@ font-family: Mulish;
     color: white;
     font-size: 1.2rem;
     font-weight: 800;
+    border-radius: 8px;
 }
 .discount{
     position: relative;
     overflow: hidden;
 }
 .discount img{
-   min-width: 100%;
-    border: 8px;
+    height: 422px;
+   width: 100%;
+    border-radius: 8px;
     /* height: 100%; */  
 }
 
@@ -298,7 +304,7 @@ font-family: Mulish;
     transform: rotate(-30deg);
     border-radius: 16px;
     background-color: var(--primary-color);
-    /* padding: 10px; */
+    padding: 3%;
 }
 
 .discount-text>h2{
@@ -360,7 +366,7 @@ footer>ul>li{
 /* ==== Mobile responsive==== */
 @media screen and (max-width:600px){
     .section-title{
-        font-size: 20px;
+        font-size: 1.4rem;
     }
     .banner-title{
         font-size: 22px;
@@ -398,6 +404,7 @@ footer>ul>li{
     #nav-toggler:checked ~ .nav-icon{
         transform: translateY(10px);
     }
+
     .banner-form{
         flex-direction: column;
     }
@@ -407,6 +414,15 @@ footer>ul>li{
     .destination-photo img{
         height: 100%;
     }
+    .form-field{
+        width: 16rem;
+    }
+    .find-btn{
+        width: 16rem;
+    }
+    .image img{
+        height: 175px;
+    }
     .popular-toures{
         flex-direction: column;
     }
@@ -415,10 +431,12 @@ footer>ul>li{
     }
     .discount-newsletter{
         flex-direction: column;
+      
     }
     .newsletter{
-        width: 73%;
+        width: 80%;
     }
+ 
     .coustomer-reviews{
     grid-template-columns: repeat(1,1fr);
             }
@@ -436,7 +454,7 @@ footer>ul>li{
 /* ====Tablet responsive==== */
 
 
- @media screen and (min-width:601px) and (max-width:992px) {
+ @media screen and (min-width:601px) and (max-width:990px) {
     .section-title{
         font-size: 22px;
     }
@@ -479,9 +497,12 @@ footer>ul>li{
     .banner-form{
         flex-direction: column;
     }
-    /* .form-field{
-        padding-right:  50px;
-    } */
+    .form-field{
+        width: 16rem;
+    }
+    .find-btn{
+        width: 16rem;
+    }
     .destination-photo{
         flex-direction: column;
     }
@@ -491,8 +512,11 @@ footer>ul>li{
     .discount-newsletter{
         flex-direction: column;
     }
+    .discount-text>h2{
+        font-size: 1.5rem;
+    }
     .newsletter{
-        width: 73%;
+        width: 83%;
     }
     .coustomer-reviews{
         grid-template-columns: repeat(1,1fr);
